@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #FFFFFF;
+
+    --base-color: 194;
+    --bg-primary-light: hsl(240, 9%, 89%);
+    --primary-color: hsl(var(--base-color), 97%, 31%);
+
+    --text-color: #323238;
+
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    
+    font-family: 'Roboto', sans-serif;
+
+    display: grid;
+    grid-template-areas: "main aside";
+    gap: 19.2rem;
+
+    min-height: 100vh;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+button svg {
+    width: clamp(3.2rem, 2rem + 12vw, 4.8rem);
+}
+
+main {
+    grid-area: main;
+
+    max-width: 32.1rem;
+    max-height: 21.3rem;
+
+    justify-self: right;
+    align-self: center;
+}
+
+#timer {
+    font-size: clamp(4rem, 4rem + 10vw, 12.6rem);
+
+    display: flex;
+    margin-bottom: 1.7rem;
+}
+
+#controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
+    width: clamp(10rem, 10rem + 30vw, 32.1rem);
+    height: clamp(3rem, 2rem + 10vw, 4.8rem);
+}
+
+aside {
+    grid-area: aside;
+
+    max-width: 30.8rem;
+    max-height: 33.6rem;
+
+    display: grid;
+    grid-template-areas: "forest rain" "coffee-shop fireplace";
+    gap: 3.2rem;
+    align-self: center;
+}
+
+aside button svg {
+    width: clamp(10rem, 10rem + 30vw, 13.8rem);
+    height: clamp(8rem, 5rem + 10vw, 15.2rem);
+}
+
+aside button svg path:nth-child(1) {
+    fill: var(--bg-primary-light);
+}
+
+aside button svg path:nth-child(2) {
+    fill: var(--text-color);
+}
+
+aside button.active svg path:nth-child(1) {
+    fill: var(--primary-color);
+}
+
+aside button.active svg path:nth-child(2) {
+    fill: var(--bg-color);
+}
+
+.sound-forest {
+    grid-area: forest;
+}
+
+.sound-rain {
+    grid-area: rain;
+}
+
+.sound-coffee-shop {
+    grid-area: coffee-shop;
+}
+
+.sound-fireplace {
+    grid-area: fireplace;
+}
