@@ -17,34 +17,39 @@ export default function() {
 
     function timeEnd() {
         kitchenTimer.play()
+
+        bgAudioForest.pause()
+        bgAudioRain.pause()
+        bgAudioCoffeeShop.pause()
+        bgAudioFireplace.pause()
     }
 
     function audioForest() {
         bgAudioForest.play()
-        /*bgAudioRain.pause()
+        bgAudioRain.pause()
         bgAudioCoffeeShop.pause()
-        bgAudioFireplace.pause()*/
+        bgAudioFireplace.pause()
     }
 
     function audioRain() {
         bgAudioRain.play()
-        /*bgAudioForest.pause()
+        bgAudioForest.pause()
         bgAudioCoffeeShop.pause()
-        bgAudioFireplace.pause()*/
+        bgAudioFireplace.pause()
     }
 
     function audioCoffeeShop() {
         bgAudioCoffeeShop.play()
-        /*bgAudioForest.pause()
+        bgAudioForest.pause()
         bgAudioRain.pause()
-        bgAudioFireplace.pause()*/
+        bgAudioFireplace.pause()
     }
 
     function audioFireplace() {
         bgAudioFireplace.play()
-        /*bgAudioForest.pause()
+        bgAudioForest.pause()
         bgAudioRain.pause()
-        bgAudioCoffeeShop.pause()*/
+        bgAudioCoffeeShop.pause()
     }
 
     return {
