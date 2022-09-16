@@ -1,3 +1,10 @@
+import {
+    buttonSoundForest,
+    buttonSoundRain,
+    buttonSoundCoffeeShop,
+    buttonSoundFireplace
+} from "./elements.js"
+
 export default function() {
     const buttonPressAudio = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/button-press.wav?raw=true")
     const kitchenTimer = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/kichen-timer.mp3?raw=true")
@@ -25,31 +32,27 @@ export default function() {
     }
 
     function audioForest() {
-        bgAudioForest.play()
-        bgAudioRain.pause()
-        bgAudioCoffeeShop.pause()
-        bgAudioFireplace.pause()
+        buttonSoundForest.classList.contains('active')
+        ? bgAudioForest.play()
+        : bgAudioForest.pause()
     }
 
     function audioRain() {
-        bgAudioRain.play()
-        bgAudioForest.pause()
-        bgAudioCoffeeShop.pause()
-        bgAudioFireplace.pause()
+        buttonSoundRain.classList.contains('active')
+        ? bgAudioRain.play()
+        : bgAudioRain.pause()
     }
 
     function audioCoffeeShop() {
-        bgAudioCoffeeShop.play()
-        bgAudioForest.pause()
-        bgAudioRain.pause()
-        bgAudioFireplace.pause()
+        buttonSoundCoffeeShop.classList.contains('active')
+        ? bgAudioCoffeeShop.play()
+        : bgAudioCoffeeShop.pause()
     }
 
     function audioFireplace() {
-        bgAudioFireplace.play()
-        bgAudioForest.pause()
-        bgAudioRain.pause()
-        bgAudioCoffeeShop.pause()
+        buttonSoundFireplace.classList.contains('active')
+        ? bgAudioFireplace.play()
+        : bgAudioFireplace.pause()
     }
 
     return {
