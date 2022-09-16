@@ -5,31 +5,27 @@ export default function Controls({
     buttonSoundFireplace
 }) {
     function soundForest() {
-        buttonSoundForest.classList.add('active')
-        buttonSoundRain.classList.remove('active')
-        buttonSoundCoffeeShop.classList.remove('active')
-        buttonSoundFireplace.classList.remove('active')
+        buttonSoundForest.classList.contains('active') 
+        ? buttonSoundForest.classList.remove('active')
+        : buttonSoundForest.classList.add('active')
     }
 
     function soundRain() {
-        buttonSoundRain.classList.add('active')
-        buttonSoundForest.classList.remove('active')
-        buttonSoundCoffeeShop.classList.remove('active')
-        buttonSoundFireplace.classList.remove('active')
+        buttonSoundRain.classList.contains('active') 
+        ? buttonSoundRain.classList.remove('active')
+        : buttonSoundRain.classList.add('active')
     }
 
     function soundCoffeeShop() {
-        buttonSoundCoffeeShop.classList.add('active')
-        buttonSoundForest.classList.remove('active')
-        buttonSoundRain.classList.remove('active')
-        buttonSoundFireplace.classList.remove('active')
+        buttonSoundCoffeeShop.classList.contains('active') 
+        ? buttonSoundCoffeeShop.classList.remove('active')
+        : buttonSoundCoffeeShop.classList.add('active')
     }
 
     function soundFireplace() {
-        buttonSoundFireplace.classList.add('active')
-        buttonSoundForest.classList.remove('active')
-        buttonSoundRain.classList.remove('active')
-        buttonSoundCoffeeShop.classList.remove('active')
+        buttonSoundFireplace.classList.contains('active') 
+        ? buttonSoundFireplace.classList.remove('active')
+        : buttonSoundFireplace.classList.add('active')
     }
 
     function reset() {
