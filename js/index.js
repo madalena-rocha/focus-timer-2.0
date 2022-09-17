@@ -20,8 +20,7 @@ const controls = Controls({
 
 const timer = Timer({
     minutesDisplay,
-    secondsDisplay,
-    resetControls: controls.reset
+    secondsDisplay
 })
 
 const sound = Sound()

@@ -28,18 +28,10 @@ export default function Controls({
         : buttonSoundFireplace.classList.add('active')
     }
 
-    function reset() {
-        buttonSoundForest.classList.remove('active')
-        buttonSoundRain.classList.remove('active')
-        buttonSoundCoffeeShop.classList.remove('active')
-        buttonSoundFireplace.classList.remove('active')
-    }
-
     return {
         soundForest,
         soundRain,
         soundCoffeeShop,
-        soundFireplace,
-        reset
+        soundFireplace
     }
 }
