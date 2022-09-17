@@ -1,6 +1,8 @@
 # focus-timer-2.0
 Desafio "FocusTimer" do Explorer da Rocketseat (em desenvolvimento).
 
+![Desafio "FocusTimer"](https://github.com/madalena-rocha/focus-timer-2.0/blob/main/assets/focus-timer-2.0.png)
+
 Os botões que se encontram do lado esquerdo, abaixo do timer, apresentam as seguintes funcionalidades:
 
 - Play: aciona o timer;
