@@ -48,11 +48,7 @@ export default function Timer({
     }
 
     function minus() {
-        if (minutes >= 5) {
-            minutes -= 5
-        } else {
-            minutes = 0
-        }
+        minutes >= 5 ? minutes -= 5 : minutes = 0
         updateDisplay(minutes, 0) 
     }
 
