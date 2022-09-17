@@ -21,10 +21,11 @@ body {
     color: var(--text-color);
     
     font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
 
-    display: grid;
-    grid-template-areas: "main aside";
-    gap: 19.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     min-height: 100vh;
 }
@@ -36,22 +37,23 @@ button {
     cursor: pointer;
 }
 
-button svg {
-    width: clamp(3.2rem, 2rem + 12vw, 4.8rem);
+.container {
+    display: grid;
+    grid-template-areas: "main aside";
+
+    width: clamp(54.7rem, 64.1vw, 82.1rem);
 }
 
 main {
     grid-area: main;
 
-    max-width: 32.1rem;
-    max-height: 21.3rem;
+    width: clamp(21.4rem, 25.1vw, 32.1rem);
 
-    justify-self: right;
     align-self: center;
 }
 
 #timer {
-    font-size: clamp(4rem, 4rem + 10vw, 12.6rem);
+    font-size: clamp(8.4rem, 9.8vw, 12.6rem);
 
     display: flex;
     margin-bottom: 1.7rem;
@@ -61,27 +63,28 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: clamp(2.7rem, 3.1vw, 4rem);
+}
 
-    width: clamp(10rem, 10rem + 30vw, 32.1rem);
-    height: clamp(3rem, 2rem + 10vw, 4.8rem);
+#controls button svg {
+    width: clamp(3.2rem, 3.8vw, 4.8rem);
+    height: auto;
 }
 
 aside {
     grid-area: aside;
 
-    max-width: 30.8rem;
-    max-height: 33.6rem;
+    width: clamp(20.5rem, 24.1vw, 30.8rem);
 
     display: grid;
     grid-template-areas: "forest rain" "coffee-shop fireplace";
-    gap: 3.2rem;
-    align-self: center;
+    gap: clamp(2.1rem, 2.5vw, 3.2rem);
+    justify-self: right;
 }
 
 aside button svg {
-    width: clamp(10rem, 10rem + 30vw, 13.8rem);
-    height: clamp(8rem, 5rem + 10vw, 15.2rem);
+    width: clamp(9.2rem, 10.8vw, 13.8rem);
+    height: auto;
 }
 
 aside button svg path:nth-child(1) {
