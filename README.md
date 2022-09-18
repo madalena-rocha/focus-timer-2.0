@@ -1,5 +1,5 @@
 # focus-timer-2.0
-Desafio "FocusTimer" do Explorer da Rocketseat, cujo objetivo foi a criação de um temporizador estilo Pomodoro (em desenvolvimento).
+Desafio "FocusTimer" do Explorer da Rocketseat, cujo objetivo foi a criação de um temporizador estilo Pomodoro.
 
 ![Desafio "FocusTimer"](https://github.com/madalena-rocha/focus-timer-2.0/blob/main/assets/focus-timer-2.0.png)
 

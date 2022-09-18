@@ -13,7 +13,7 @@ export default function Timer({
     }
 
     function reset() {
-        updateDisplay(25, 0)
+        updateDisplay(minutes, 0)
         clearTimeout(timerTimeOut)
     }
 
@@ -23,10 +23,10 @@ export default function Timer({
             let minutes = Number(minutesDisplay.textContent)
             let isFinished = minutes <= 0 && seconds <= 0
 
-            updateDisplay(minutes, 0)
+            reset()
             
             if (isFinished) {
-                updateDisplay(25, 0)
+                updateDisplay(minutes, 0)
                 Sounds().timeEnd()
                 return
             }
@@ -44,12 +44,12 @@ export default function Timer({
 
     function plus() {
         minutes += 5
-        updateDisplay(minutes, 0)
+        reset()
     }
 
     function minus() {
         minutes >= 5 ? minutes -= 5 : minutes = 0
-        updateDisplay(minutes, 0) 
+        reset()
     }
 
     return {

@@ -24,11 +24,6 @@ export default function() {
 
     function timeEnd() {
         kitchenTimer.play()
-
-        bgAudioForest.pause()
-        bgAudioRain.pause()
-        bgAudioCoffeeShop.pause()
-        bgAudioFireplace.pause()
     }
 
     function audioForest() {
