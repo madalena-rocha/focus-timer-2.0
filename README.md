@@ -5,7 +5,7 @@ Desafio "FocusTimer" do Explorer da Rocketseat, cujo objetivo foi a criação de
 
 Os botões que se encontram do lado esquerdo, abaixo do timer, apresentam as seguintes funcionalidades:
 
-- Play: aciona o timer;
+- Play / Pause: aciona / pausa o timer;
 - Stop: para o timer;
 - +: aumenta em 5 minutos o tempo do timer;
 - -: diminui em 5 minutos o tempo do timer.
