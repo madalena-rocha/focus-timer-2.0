@@ -44,6 +44,10 @@ button {
     width: clamp(54.7rem, 64.1vw, 82.1rem);
 }
 
+.hide {
+    display: none;
+}
+
 main {
     grid-area: main;
 

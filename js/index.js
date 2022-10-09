@@ -3,6 +3,9 @@ import Timer from "./timer.js"
 import Sound from "./sounds.js"
 import Events from "./events.js"
 import {
+    buttonPlay,
+    buttonPause,
+    buttonStop,
     buttonSoundForest,
     buttonSoundRain,
     buttonSoundCoffeeShop,
@@ -12,6 +15,9 @@ import {
 } from "./elements.js"
 
 const controls = Controls({
+    buttonPlay,
+    buttonPause,
+    buttonStop,
     buttonSoundForest,
     buttonSoundRain,
     buttonSoundCoffeeShop,
@@ -20,7 +26,8 @@ const controls = Controls({
 
 const timer = Timer({
     minutesDisplay,
-    secondsDisplay
+    secondsDisplay,
+    resetControls: controls.reset
 })
 
 const sound = Sound()
